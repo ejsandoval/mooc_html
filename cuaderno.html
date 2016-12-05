@@ -1,0 +1,51 @@
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/cuaderno.css">
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="interfaz-cuaderno container">
+		<div class="menu">
+			<ul class="nav-bar">
+				<li class="left"><object type="image/svg+xml" data="img/close.svg" class="icon icon-close"></object></li>
+				<li class="left"><object type="image/svg+xml" data="img/minimize.svg" class="icon icon-minimize"></object></li>
+				<li class="left"><object type="image/svg+xml" data="img/newnote.svg" class="icon icon-new"></object></li>
+				<li class="left"><object type="image/svg+xml" data="img/loadnote.svg" class="icon icon-load"></object></li>
+				<li class="right"><object type="image/svg+xml" data="img/stats.svg" class="icon icon-stats"></object></li>
+				<li class="right"><object type="image/svg+xml" data="img/notes.svg" class="icon icon-notes"></object></li>
+				<li class="right" id="contador"><label>00:00</label></li>
+				<li class="right"><object type="image/svg+xml" data="img/time.svg" class="icon-time"></object></li>
+			</ul>
+		</div>
+		<div class="anillado">
+			<img src="img/anillado.svg">
+		</div>
+		<div class="texto">
+			<label id="titulo-principal">Título nota</label>
+			<textarea></textarea>
+		</div>
+		<div class="lateral-nav-bar">
+			<div class="sub-menu">
+				<object type="image/svg+xml" data="img/closenegro.svg" class="icon icon-closeblack"></object>
+				<object type="image/svg+xml" data="img/trash.svg" class="icon icon-trash"></object>
+				<div class="notes">
+					<div id="note-2" class="note-label"><h3 class="rotate">Titulo nota 2</h3></div>
+					<div id="note-3" class="note-label"><h3 class="rotate">Titulo nota 3</h3></div>
+					<div id="space" class="note-label"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</div>	
+	<script>
+	d3.selectAll(".icon").on("mouseover", mouseOver).on("mouseout", mouseOut);
+	function mouseOver(){
+			d3.select(this).transition().duration(100).style("opacity", .6);
+		}
+	function mouseOut(){
+			d3.select(this).transition().duration(100).style("opacity", 1);    
+		}
+		</script>
+</body>

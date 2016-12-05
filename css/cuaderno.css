@@ -1,0 +1,201 @@
+@font-face{
+	font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-size: 10px;
+}
+
+body{
+	font-family: OpenSans;
+}
+
+.interfaz-cuaderno{ 
+	width: 370px;
+	height: 400px;
+	background-color: #ffffff;
+	background-size: 200px 200px;
+	background-image: url("paper-fibers.png");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-bar {
+	list-style:none;
+}
+
+.nav-bar li{
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.left {
+	float: left;
+	padding-right: 4px;
+}
+
+.right {
+	float: right;
+}
+
+.menu{
+	background-color: #3366ff;
+	width: 100%;
+	height: 8%;
+}
+
+.anillado{
+	float: left;
+	width: 10%;
+}
+
+.lateral-nav-bar {
+    float: left;
+    width: 8%;
+}
+
+.texto{
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+	width: 82%;
+}
+
+.sub-menu{
+	float: left;
+	width: 100%;
+}
+
+.icon-close { 
+	padding-top: 3px;  
+    height: 24px;
+    width: 24px;
+}
+
+.icon-minimize {
+	padding-top: 3px;  
+    height: 30px;
+    width: 30px;
+}
+
+.icon-new { 
+    height: 30px;
+    width: 30px;
+}
+
+.icon-load { 
+    height: 30px;
+    width: 30px;
+    padding-top: 3px;
+}
+
+.icon-time { 
+    height: 30px;
+    width: 30px;
+    padding-top: 3px;
+}
+
+#contador{
+	font-size: 10px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.icon-notes { 
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 4px;
+}
+
+.icon-stats { 
+    height: 30px;
+    width: 30px;
+    padding-top: 2px;
+    position: center center;
+    margin-right: 10px;
+}
+
+.icon-closeblack { 
+    height: 28px;
+    width: 28px;
+    padding-top: 5px;
+    position: center;
+}
+
+.icon-trash { 
+    height: 28px;
+    width: 28px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    position: center;
+}
+
+textarea {
+    overflow-y: scroll;
+    height: 80%;
+    width: 98%;
+    resize: none;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("paper-fibers.png");
+}
+
+textarea:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+}
+
+.notes {
+    height: 300px;
+}
+
+.notes div{
+    display: inline-block;
+    float: left;
+}
+.note-label{
+    width: 30px;
+    height: 100px;
+    -webkit-box-shadow: inset 0px -1px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px -1px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px -1px 10px 0px rgba(0,0,0,0.3);
+}
+
+#space{
+    display: inline-block;
+    height: 35.5%;
+}
+
+h3 {
+    vertical-align: middle; 
+    text-align: center; 
+    font-size: 11.5px;
+    color: #999999;
+    margin: 0;
+    height: 100%;
+    width: 100px;
+    position: relative;
+    padding-top: 20%;
+}
+
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
