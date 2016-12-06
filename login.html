@@ -1,0 +1,24 @@
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/login.js"></script>
+</head>
+<body>
+	<div class="login-window">
+		<h1>INICIAR SESIÓN</h1>
+		<form id="frm1" method="post" name="loginform">
+		  <input type="text" name="email" id="email" placeholder="e-mail" class="style-1" />
+		  <br>
+		  <input type="password" name="password" id="password" placeholder="password" class="style-1"/>
+		  <br>
+		  <input type="button" value="INGRESAR" id="submit" onclick="validate()" class="style-2"/>
+		  <div class="extras">
+			  <a href="#">Registrarse</a>
+			  <br>
+			  <a href="#">Olvidé mi contraseña</a>
+		  </div>
+		</form>
+	</div>
+</body>

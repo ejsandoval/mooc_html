@@ -1,0 +1,35 @@
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="dashboard-window clearfix">
+		<div class="time">
+		<text class="time-text">Tiempo conectado: </text><label class="session-time">00:00</label>
+		</div>
+		<p class="message">¿En qué has invertido tu tiempo?</p>
+		<object type="image/svg+xml" data="img/graphic.svg" class="graphic"></object>
+		<form id="frm1" method="post" name="optionsform">
+			<div class="button progress-button">
+				<object type="image/svg+xml" data="img/statsnegro.svg" class="icon icon-statsnegro"></object><input type="button" value="Mi progreso" id="progess" onclick="openProgess()" class="style-3"/>
+			</div>
+			<div class="button notes-button">
+				<object type="image/svg+xml" data="img/notesblack.svg" class="icon icon-notes"></object><input type="button" value="Ver notas" id="opennotes" onclick="openNotes()" class="style-3"/>
+			</div>
+			<div class="button write-button">
+				<object type="image/svg+xml" data="img/write.svg" class="icon icon-write"></object><input type="button" value="Tomar notas" id="takenotes" onclick="openNotebook()" class="style-3"/>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		d3.selectAll(".button").on("mouseover", mouseOver).on("mouseout", mouseOut);
+		function mouseOver(){
+				d3.select(this).select("object").transition().duration(100).style("opacity", .6);
+			}
+		function mouseOut(){
+				d3.select(this).select("object").transition().duration(100).style("opacity", 1);    
+			}
+	</script>
+</body>

@@ -1,5 +1,5 @@
 @font-face{
-	font-family: OpenSans;
+  font-family: OpenSans;
   src: url(../fonts/OpenSans-Regular.ttf);
   font-size: 10px;
 }
@@ -182,6 +182,9 @@ h3 {
     padding-top: 20%;
 }
 
+h3:hover {
+    color: #505050;
+}
 
 .rotate {
   -webkit-transform: rotate(-90deg);
